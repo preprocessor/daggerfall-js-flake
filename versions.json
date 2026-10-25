@@ -1,11 +1,11 @@
 {
-  "version": "app-v0.1.11370",
+  "version": "app-v0.1.11634",
   "x86_64-linux": {
-    "hash": "sha256-bnrBM9P9CYrbHz5Mn3wTfGd2X+rrvDXFHxTJgQba1Vc=",
-    "url": "https://github.com/Lattymoy/daggerfall-js-source/releases/download/app-v0.1.11370/DaggerfallOnline-linux-x86_64.AppImage"
+    "hash": "sha256-RXha8TVUU9oPoegnY57ab0pdQUTaPB4nxCoP9qIT0nc=",
+    "url": "https://github.com/Lattymoy/daggerfall-js-source/releases/download/app-v0.1.11634/DaggerfallOnline-linux-x86_64.AppImage"
   },
   "aarch64-darwin": {
-    "hash": "sha256-ysdYi9g4KEXEmfEGOPc9G8+jpduHE/YXg9F3dn2rg8Q=",
-    "url": "https://github.com/Lattymoy/daggerfall-js-source/releases/download/app-v0.1.11370/DaggerfallOnline-mac-arm64.dmg"
+    "hash": "sha256-egfvMkuu/UbCav4YgwObdAOzgv6iVaHQy/6noaAFJs8=",
+    "url": "https://github.com/Lattymoy/daggerfall-js-source/releases/download/app-v0.1.11634/DaggerfallOnline-mac-arm64.dmg"
   }
 }
