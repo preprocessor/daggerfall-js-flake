@@ -37,7 +37,7 @@ nix run github:preprocessor/daggerfall-js-flake
 nix profile install github:preprocessor/daggerfall-js-flake#daggerfall-js
 ```
 
-This puts a `daggerfall-js` command to your `PATH`:
+This adds a `daggerfall-js` command to your `PATH`:
 
 ```bash
 daggerfall-js # start the game
