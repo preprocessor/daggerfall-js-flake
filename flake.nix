@@ -6,22 +6,19 @@
   outputs =
     { self, nixpkgs }:
     let
-      systemPkgs = system: f: f nixpkgs.legacyPackages.${system} system;
+      systems = [
+        "x86_64-linux"
+        "aarch64-darwin"
+      ];
+      systemPkgs = f: system: f nixpkgs.legacyPackages.${system} system;
+      supportedSystems = f: nixpkgs.lib.genAttrs systems (systemPkgs f);
     in
     {
-      packages = {
-        x86_64-linux = systemPkgs "x86_64-linux" (
-          pkgs: system: {
-            daggerfall-js = pkgs.callPackage ./packages/linux.nix { };
-            default = self.packages.${system}.daggerfall-js;
-          }
-        );
-        aarch64-darwin = systemPkgs "aarch64-darwin" (
-          pkgs: system: {
-            daggerfall-js = pkgs.callPackage ./packages/darwin.nix { };
-            default = self.packages.${system}.daggerfall-js;
-          }
-        );
-      };
+      packages = supportedSystems (
+        pkgs: system: {
+          daggerfall-js = pkgs.callPackage ./packages/${system}.nix { };
+          default = self.packages.${system}.daggerfall-js;
+        }
+      );
     };
 }

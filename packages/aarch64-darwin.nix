@@ -9,8 +9,7 @@ let
   version = "0.1.11814";
 in
 stdenvNoCC.mkDerivation (finalAttrs: {
-  inherit pname;
-  version = version;
+  inherit pname version;
   __structuredAttrs = true;
   strictDeps = true;
 
