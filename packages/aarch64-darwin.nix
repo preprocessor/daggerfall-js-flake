@@ -6,7 +6,7 @@
 }:
 let
   pname = "daggerfall-js";
-  version = "0.1.11831";
+  version = "0.1.14487";
 in
 stdenvNoCC.mkDerivation (finalAttrs: {
   inherit pname version;
@@ -15,7 +15,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   src = fetchurl {
     url = "https://github.com/Lattymoy/daggerfall-js-source/releases/download/app-v${finalAttrs.version}/DaggerfallOnline-mac-arm64.dmg";
-    hash = "sha256-ym50uIk3Uyaat71Y8ZzXaf2FcniPTgSKYjLlSOyhnHo=";
+    hash = "sha256-3XRKBTIx9R21ZhXtDHb+6JaX3l5Yftc7bBTZM5PmhKw=";
   };
 
   nativeBuildInputs = [ _7zz ];
