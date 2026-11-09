@@ -1,7 +1,7 @@
 { appimageTools, fetchurl, ... }:
 let
   pname = "daggerfall-js";
-  version = "0.1.14598";
+  version = "0.1.14601";
 in
 appimageTools.wrapType2 (finalAttrs: {
   inherit pname version;
@@ -10,6 +10,6 @@ appimageTools.wrapType2 (finalAttrs: {
 
   src = fetchurl {
     url = "https://github.com/Lattymoy/daggerfall-js-source/releases/download/app-v${finalAttrs.version}/DaggerfallOnline-linux-x86_64.AppImage";
-    hash = "sha256-MN68namxSYv5vJmlcROITWKf9+Sj+YnuYzcZem8Hsm0=";
+    hash = "sha256-+ZW36XWzPaBnXIKYtea7Xm7GYvwt/xsPRu9rzqLMmpk=";
   };
 })
